@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KindDev</title>
+  <title>Explore KindDev</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+  <!-- Hamburger Menu Icon -->
   <div class="menu-icon" onclick="toggleMenu()">
     <div class="bar"></div>
     <div class="bar"></div>
@@ -17,39 +17,16 @@
   <!-- Navigation Bar -->
   <nav class="navbar" id="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" onclick="loadSection('home')">Home</a></li>
+      <li><a href="#" onclick="loadSection('about')">About</a></li>
+      <li><a href="#" onclick="loadSection('team')">Team</a></li>
+      <li><a href="#" onclick="loadSection('contact')">Contact</a></li>
       <li><a href="#download">Download</a></li>
     </ul>
   </nav>
 
-  <!-- Main Container -->
-  <div id="home" class="home-section">
-    <h1 class="main-title">Explore KindDev</h1>
-    <p>Download Spicydev Site code.</p>
-    <button onclick="downloadCode()">Download Sample Code</button>
-  </div>
-
-  <!-- About Section -->
-  <section id="about" class="info-section">
-    <h2>About Us</h2>
-    <p>KindDev is a developers team that provides free things.</p>
-  </section>
-
-  <!-- Team Section -->
-  <section id="team" class="info-section">
-    <h2>Our Team</h2>
-    <p>Founder/Owner: EnderZombie</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="info-section">
-    <h2>Contact Us</h2>
-    <p>Email: enderzmb@gmail.com</p>
-    <p>Discord: <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank">Join our Discord</a></p>
-  </section>
+  <!-- Section Container -->
+  <div id="section-container"></div>
 
   <script src="script.js"></script>
 </body>
