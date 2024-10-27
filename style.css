@@ -11,13 +11,47 @@ body, html {
   background: #0d0d0d;
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-/* Container */
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #66ff99;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #4dff88;
+}
+
+/* Main Container */
 .container {
   text-align: center;
+  margin-top: 100px;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -45,6 +79,26 @@ button {
 
 button:hover {
   background: #4dff88;
+}
+
+/* Info Sections */
+.info-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-section a {
+  color: #66ff99;
+  text-decoration: underline;
+}
+
+.info-section a:hover {
+  color: #4dff88;
 }
 
 /* Background Animation */
