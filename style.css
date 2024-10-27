@@ -15,30 +15,47 @@ body, html {
   align-items: center;
 }
 
-/* Navbar */
-.navbar {
-  position: absolute;
+/* Menu Icon (Hamburger) */
+.menu-icon {
+  position: fixed;
   top: 20px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #66ff99;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Navbar */
+.navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .navbar ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.navbar li {
-  display: inline;
+  text-align: center;
 }
 
 .navbar a {
   color: #66ff99;
   text-decoration: none;
+  font-size: 2rem;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -54,13 +71,14 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
+  margin-top: 50px;
   animation: fadeIn 1s ease-in-out;
 }
 
 .main-title {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
   color: #66ff99;
   animation: titleAnimation 2s ease-in-out;
 }
