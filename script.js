@@ -25,13 +25,7 @@ function downloadCode() {
   const link = document.createElement('a');
   link.href = '/storage/emulated/Download/SpicydevSite.zip';
   link.download = 'SpicydevSite.zip';
-  link.click();
-  // Download sample code function
-function downloadCode() {
-  const link = document.createElement('a');
-  link.href = '/storage/emulated/Download/Darkmod.py';
-  link.download = 'Darkmod.py';
-  link.click();
+  link.click(); 
 }
 
 // Load the default section on page load
